@@ -1,0 +1,43 @@
+:root { /*ровно тоже что и селектор html*/
+    font-size: 0.75em;
+    /*
+    14(желаемый размер шрифта в пикселях) / 16(размер шрифта по умолчанию в бразуере)
+    что равняется 0.875, по этой формуле находим что что бы размер шрифта был 14px
+    нужно разделить 14/16 и применить результат в размерах em
+    */
+}
+
+/*
+Единицы rem работаю относительно РУТОВОГО размера шрифта
+Единицы em работаю относительно РОДИТЕЛЬСКОГО размера шрифта
+*/
+
+.panel {
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+}
+
+.panel > h2 {
+    margin-top: 0;
+    font-size: 0.8em; /*font-size: 0.875em = 14px, 14px * 0.8rem = текущий размер шрифта в этом селекторе*/
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.panel.large {
+    font-size: 1.2em;
+}
+
+@media (min-width: 800px) {
+    :root {
+        font-size: 0.875em;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 1em;
+    }
+}

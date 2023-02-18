@@ -1,0 +1,70 @@
+/*
+Лучше всего сохранять более низкую специфичность
+И тогда переопределить стили будет проще и больше вариантов это сделать
+Приоритет селекторов: идентификатор, класс, тэг
+
+Так же на определение каскадности влияет порядок селекторов
+*/
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #2f4f4f;
+    margin-bottom: 10px;
+}
+
+.nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+/*стили ссылок должны быть в определенном порядке*/
+a.featured {
+    background-color: orange;
+    box-shadow: 10px 2px #6f9090;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.footer {
+    color: #666;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: inherit; /*наследование от родительского элемента*/
+    /*color: initial; сброс до стилей по умолчанию браузера*/
+    text-decoration: underline;
+}

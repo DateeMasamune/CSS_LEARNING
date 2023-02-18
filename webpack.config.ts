@@ -58,8 +58,18 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'cascad',
-      template: path.resolve(__dirname, './src/pages/cascad/cascad.html'), // шаблон
+      template: path.resolve(__dirname, './src/pages/cascad/index.html'), // шаблон
       filename: 'cascad.html', // название выходного файла
+    }),
+    new HtmlWebpackPlugin({
+      title: 'relative-values',
+      template: path.resolve(__dirname, './src/pages/relative-values/index.html'), // шаблон
+      filename: 'relative-values.html', // название выходного файла
+    }),
+    new HtmlWebpackPlugin({
+      title: 'relative-values-part2',
+      template: path.resolve(__dirname, './src/pages/relative-values-part2/index.html'), // шаблон
+      filename: 'relative-values-part2.html', // название выходного файла
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),

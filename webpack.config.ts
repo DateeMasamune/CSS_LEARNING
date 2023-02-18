@@ -56,6 +56,11 @@ module.exports = {
       template: path.resolve(__dirname, './index.html'), // шаблон
       filename: 'index.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'cascad',
+      template: path.resolve(__dirname, './src/pages/cascad/cascad.html'), // шаблон
+      filename: 'cascad.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

@@ -71,6 +71,16 @@ module.exports = {
       template: path.resolve(__dirname, './src/pages/relative-values-part2/index.html'), // шаблон
       filename: 'relative-values-part2.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'css-variables',
+      template: path.resolve(__dirname, './src/pages/css-variables/index.html'), // шаблон
+      filename: 'css-variables.html', // название выходного файла
+    }),
+    new HtmlWebpackPlugin({
+      title: 'block-model',
+      template: path.resolve(__dirname, './src/pages/block-model/index.html'), // шаблон
+      filename: 'block-model.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

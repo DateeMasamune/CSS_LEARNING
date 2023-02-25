@@ -81,6 +81,16 @@ module.exports = {
       template: path.resolve(__dirname, './src/pages/block-model/index.html'), // шаблон
       filename: 'block-model.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'floating-elements',
+      template: path.resolve(__dirname, './src/pages/floating-elements/index.html'), // шаблон
+      filename: 'floating-elements.html', // название выходного файла
+    }),
+    new HtmlWebpackPlugin({
+      title: 'flex-box',
+      template: path.resolve(__dirname, './src/pages/flex-box/index.html'), // шаблон
+      filename: 'flex-box.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

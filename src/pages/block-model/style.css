@@ -17,6 +17,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body * + * {
+    margin-top: 1.5em;
+}
+
 header {
     padding: 1em 1.5em;
     color: #fff;
@@ -39,6 +43,7 @@ main {
 
 .main {
     width: 70%;
+    padding: 1em 1.5em;
     background-color: #fff;
     border-radius: .5em;
 }
@@ -47,6 +52,7 @@ main {
     width: 30%;
     margin-left: 1.5em;
     padding: 1.5em;
+    margin-top: 0;
     background-color: #fff;
     border-radius: .5em;
 }
@@ -63,4 +69,11 @@ main {
 
 .button-link + .button-link { /*комбинатор "+" для задания стиля только для смежных элементов*/
     margin-top: 1.5em;
+}
+
+.sponsor-link {
+    display: block;
+    color: #0072b0;
+    font-weight: bold;
+    text-decoration: none;
 }

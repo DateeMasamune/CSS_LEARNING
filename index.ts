@@ -11,7 +11,7 @@ import relativeValues from './src/pages/relative-values';
 import relativeValue2 from './src/pages/relative-values-part2';
 
 /**
- * Глава 3.5.1 стр 111
+ * Глава 6 стр 182
  */
 
 const { pathname } = window.location;

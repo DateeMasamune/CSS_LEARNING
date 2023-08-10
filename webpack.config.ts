@@ -92,9 +92,14 @@ module.exports = {
       filename: 'flex-box.html', // название выходного файла
     }),
     new HtmlWebpackPlugin({
-      title: 'grids',
+      title: 'grids-simple',
       template: path.resolve(__dirname, './src/pages/grids-simple/index.html'), // шаблон
       filename: 'grids-simple.html', // название выходного файла
+    }),
+    new HtmlWebpackPlugin({
+      title: 'grids-page',
+      template: path.resolve(__dirname, './src/pages/grids-page/index.html'), // шаблон
+      filename: 'grids-page.html', // название выходного файла
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),

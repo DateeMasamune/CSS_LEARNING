@@ -91,6 +91,11 @@ module.exports = {
       template: path.resolve(__dirname, './src/pages/flex-box/index.html'), // шаблон
       filename: 'flex-box.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'grids',
+      template: path.resolve(__dirname, './src/pages/grids-simple/index.html'), // шаблон
+      filename: 'grids-simple.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

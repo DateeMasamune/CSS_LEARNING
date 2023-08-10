@@ -1,0 +1,13 @@
+.grid {
+    display: grid; /*элементы являются контейнером сетки*/
+    grid-template-columns: 1fr 1fr 1fr; /*определяем три колонки одинаковой ширины*/
+    grid-template-rows: 1fr 1fr; /*определяем две строки одинаковой ширины*/
+    grid-gap: 0.5em; /*создаем зазоры между ячейками*/
+}
+
+.grid > * {
+    background-color: darkgray;
+    color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}

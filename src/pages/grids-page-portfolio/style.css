@@ -1,0 +1,68 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #709b90;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*Установка минимальной ширины колонки 200пкс и автоматическое заполнение сетки*/
+    grid-auto-rows: 1fr; /*Установка высоты неявной горизонтальной полосы сетки размером 1fr*/
+    grid-gap: 1em;
+    grid-auto-flow: dense; /*Задействование алгоритма плотного размещения элементов*/
+}
+
+.portfolio > figure {
+    max-width: 100%;
+    color: white;
+    margin: 0;
+}
+
+.portfolio figcaption {
+    padding: 0.3em 0.8em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: right;
+}
+
+.portfolio .featured {
+    grid-row: span 2;               /*      Увеличение демонстрируемых ихображений так                */
+    grid-column: span 2;            /*      что бы они занимали две полосы сетки в обоих направлениях */
+}
+
+.black {
+    background: black;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+.pink {
+    background: pink;
+}
+
+.gray {
+    background: gray;
+}
+
+.orange {
+    background: orange;
+}

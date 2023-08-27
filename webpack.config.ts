@@ -101,6 +101,11 @@ module.exports = {
       template: path.resolve(__dirname, './src/pages/grids-page/index.html'), // шаблон
       filename: 'grids-page.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'grids-page-portfolio',
+      template: path.resolve(__dirname, './src/pages/grids-page-portfolio/index.html'), // шаблон
+      filename: 'grids-page-portfolio.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

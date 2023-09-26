@@ -4,7 +4,8 @@ import {
   CSS_VARIABLES,
   FLEX_BOX,
   FLOATING_ELEMENTS,
-  GRIDS_PAGE, GRIDS_PAGE_PORTFOLIO, GRIDS_SIMPLE, RELATIVE_VALUES, RELATIVE_VALUES_PART2,
+  GRIDS_PAGE,
+  GRIDS_PAGE_PORTFOLIO, GRIDS_SIMPLE, RELATIVE_VALUES, RELATIVE_VALUES_PART2, TOP_BANNER,
 } from './src/constants/pagesName';
 import blockModel from './src/pages/block-model';
 import cascad from './src/pages/cascad';
@@ -16,9 +17,10 @@ import gridsPagePortfolio from './src/pages/grids-page-portfolio';
 import gridsSimple from './src/pages/grids-simple';
 import relativeValues from './src/pages/relative-values';
 import relativeValue2 from './src/pages/relative-values-part2';
+import topBanner from './src/pages/top-banner';
 
 /**
- * Глава 6.4.2 стр 207
+ * Глава 7.2.2 стр 224
  */
 
 const { pathname } = window.location;
@@ -53,6 +55,9 @@ switch (pathname) {
     break;
   case GRIDS_PAGE_PORTFOLIO:
     gridsPagePortfolio();
+    break;
+  case TOP_BANNER:
+    topBanner();
     break;
   default:
 }

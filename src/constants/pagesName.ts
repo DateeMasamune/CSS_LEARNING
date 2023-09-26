@@ -8,3 +8,4 @@ export const FLEX_BOX = '/flex-box.html';
 export const GRIDS_SIMPLE = '/grids-simple.html';
 export const GRIDS_PAGE = '/grids-page.html';
 export const GRIDS_PAGE_PORTFOLIO = '/grids-page-portfolio.html';
+export const TOP_BANNER = '/top-banner.html';

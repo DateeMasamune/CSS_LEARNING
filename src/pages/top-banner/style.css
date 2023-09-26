@@ -46,6 +46,10 @@ button {
     overflow: auto; /*Позволяет прокручивать тело модального окна при необходимости*/
 }
 
-.moda-close {
+.modal-close {
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+    padding: 0.3em;
     cursor: pointer;
 }

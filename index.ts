@@ -20,7 +20,7 @@ import relativeValue2 from './src/pages/relative-values-part2';
 import topBanner from './src/pages/top-banner';
 
 /**
- * Глава 6.4.2 стр 207
+ * Глава 7.2.2 стр 224
  */
 
 const { pathname } = window.location;

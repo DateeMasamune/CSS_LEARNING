@@ -2,6 +2,7 @@ import {
   BLOCK_MODEL,
   CASCAD,
   CSS_VARIABLES,
+  EMPTY,
   FLEX_BOX,
   FLOATING_ELEMENTS,
   GRIDS_PAGE,
@@ -10,6 +11,7 @@ import {
 import blockModel from './src/pages/block-model';
 import cascad from './src/pages/cascad';
 import cssVariables from './src/pages/css-variables';
+import empty from './src/pages/empty';
 import flexBox from './src/pages/flex-box';
 import floatingElements from './src/pages/floating-elements';
 import gridsPage from './src/pages/grids-page';
@@ -58,6 +60,9 @@ switch (pathname) {
     break;
   case TOP_BANNER:
     topBanner();
+    break;
+  case EMPTY:
+    empty();
     break;
   default:
 }

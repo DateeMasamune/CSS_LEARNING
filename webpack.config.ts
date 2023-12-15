@@ -111,6 +111,11 @@ module.exports = {
       template: path.resolve(__dirname, './src/pages/top-banner/index.html'), // шаблон
       filename: 'top-banner.html', // название выходного файла
     }),
+    new HtmlWebpackPlugin({
+      title: 'empty',
+      template: path.resolve(__dirname, './src/pages/empty/index.html'), // шаблон
+      filename: 'empty.html', // название выходного файла
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
